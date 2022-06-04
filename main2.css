@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100%;
+}
+
+/* 
+.container .top>div {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.container .articles {
+  width: 95%;
+  column-gap: 1em;
+  padding: 1em 1em;
+  background-color: aquamarine;
+  /* margin: 2em auto; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "article1";
+}
+
+.artwidth img {
+  width: 300px;
+}
+
+.artheight {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.artheight img {
+  width: 100%;
+  height: 100%;
+  max-height: 150px;
+  min-width: 180px;
+}
+
+.container .articles>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 90%;
+  margin: 2em auto;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  grid-template-areas:
+    /* "top top top top"
+    "fotoMain fotoMain fotoMain fotoMain"
+    "articles articles articles articles"
+    "flora    fauna    fotoff   fotoff"
+    "resena   resena   links    links"
+    "footer   footer   footer   footer" */
+}
+
+.container .top {
+  width: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+}
+
+
+
+
+
+
+
+/* AREAS DEFINITION */
+
+.top {
+  grid-area: top;
+  height: 3em;
+  background-color: #856159;
+}
+
+.header {
+  grid-area: header;
+  background-color: lightblue;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: lightcoral;
+}
+
+.navigation {
+  background-color: rebeccapurple;
+  grid-area: navigation;
+}
+
+.fotoMain {
+  grid-area: fotoMain;
+  background-color: rgb(240, 181, 85);
+}
+
+.articles {
+  grid-area: articles;
+}
+
+.article1 {
+  grid-area: article1;
+  background-color: lightgray;
+}
+
+.article2 {
+  grid-area: article2;
+  background-color: lightseagreen;
+}
+
+.article3 {
+  grid-area: article3;
+  background-color: lightsalmon;
+}
+
+.article4 {
+  grid-area: article4;
+  background-color: limegreen;
+}
+
+.flora {
+  grid-area: flora;
+}
+
+.fauna {
+  grid-area: fauna;
+}
+
+.flora1 {
+  grid-area: flora1;
+  background-color: lightcyan;
+}
+
+.flora2 {
+  grid-area: flora2;
+  background-color: aqua;
+}
+
+.flora3 {
+  grid-area: flora3;
+  background-color: bisque;
+}
+
+.fauna1 {
+  grid-area: fauna1;
+  background-color: blue;
+}
+
+.fauna2 {
+  grid-area: fauna2;
+  background-color: blueviolet;
+}
+
+.fauna3 {
+  grid-area: fauna3;
+  background-color: brown;
+}
+
+.resena {
+  grid-area: resena;
+  background-color: burlywood;
+}
+
+.fotoff {
+  grid-area: fotoff;
+  background-color: chocolate;
+}
+
+.links {
+  grid-area: links;
+  background-color: cadetblue;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: grey;
+}
