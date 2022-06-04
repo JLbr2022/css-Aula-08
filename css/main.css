@@ -56,13 +56,13 @@ a {
 
 .article {
   margin: 1.5em;
-  border: #37201a;
-  border-style: solid;
+  /* border: #37201a;
+  border-style: solid; */
 }
 
 .article p {
   width: 100%;
-  font-size: 1em;
+  font-size: 13px;
 }
 
 .article img {
@@ -78,7 +78,19 @@ a {
   color: #8e7066;
   background-color: #37201a;
   column-gap: 2em;
-  padding: 2em 2em;
+  padding: 2em 1.5em;
+
+  /* border: rgb(3, 233, 14);
+  border-style: solid; */
+}
+
+.flora,
+.fauna,
+.fotoff {
+  width: 100%;
+
+  /* border: rgb(3, 233, 14);
+  border-style: solid; */
 }
 
 .flora h2 {
@@ -149,29 +161,32 @@ a {
 /* RESENA AND LINKS SECTION */
 
 
-/* .aboutlinks {
-  grid-area: aboutlinks;
+.aboutlinks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
   background-color: #251611;
   color: #856159;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 50px 200px 50px 50px;
+  /* column-gap: 2em; */
+  padding: 2em 1.5em;
+
+  /* border: rgb(3, 233, 14);
+  border-style: solid; */
 }
 
-.about {
-  font-size: 21px;
-  width: 960px;
+.about,
+.links {
+  /* border: rgb(3, 233, 14);
+  border-style: solid; */
+
+  width: 100%;
+  font-size: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about p {
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.links {
-  font-size: 21px;
-  padding-top: 15px;
+  padding: 1em;
 }
 
 .links ul,
@@ -189,12 +204,13 @@ a {
   color: #180e0c;
   transition: all .3s linear;
   border-radius: .5em;
-} */
+}
+
 
 /* FOOTER */
 
-/* .footer {
-   grid-area: footer;
+.footer {
+  grid-area: footer;
   background-color: #180e0c;
   color: #412720;
   height: 100px;
@@ -202,7 +218,7 @@ a {
   align-items: center;
   justify-content: center;
 
-} */
+}
 
 /* MEDIAS QUERY SECTION */
 
@@ -234,6 +250,28 @@ a {
   }
 }
 
+@media all and (max-width: 600px) {
+  .florafauna {
+    width: auto;
+    column-gap: 0;
+  }
+
+  .flora,
+  .fauna,
+  .fotoff {
+    width: 95%;
+  }
+
+  .flora img {
+    width: 30%;
+  }
+
+  .fauna img {
+    width: 30%;
+  }
+}
+
+
 @media all and (max-width: 500px) {
   .header {
     height: 130px;
@@ -255,8 +293,8 @@ a {
   .article {
     transition-duration: 100ms;
     margin: .5em;
-    border: #37201a;
-    border-style: solid;
+    /* border: #37201a;
+    border-style: solid; */
   }
 
   .article p {
@@ -284,8 +322,8 @@ a {
 
   .article {
     margin: 0;
-    border: #37201a;
-    border-style: solid;
+    /* border: #37201a;
+    border-style: solid; */
   }
 
   .article h2 {
@@ -311,13 +349,24 @@ a {
   .flora,
   .fauna {
     width: 58%;
-    border: #fff;
-    border-style: solid;
+    /* border: #fff;
+    border-style: solid; */
+  }
+
+  .flora h2 {
+    font-size: 15px;
+  }
+
+  .fauna h2 {
+    font-size: 15px;
   }
 
   .flora1 img {
-    max-width: 15%;
+    width: 100%;
+  }
 
+  .fauna1 img {
+    width: 100%;
   }
 
   .flora1,
@@ -327,7 +376,7 @@ a {
   }
 
   .fotoff {
-    width: 57%;
+    width: 58%;
   }
 
   .fotoff h2 {
@@ -336,5 +385,26 @@ a {
 
   .fotoff img {
     width: 100%;
+  }
+
+  .about p {
+    width: 100%;
+  }
+
+  .about,
+  .links {
+    font-size: 13px;
+    width: 60%;
+  }
+
+  .links h2 {
+    font-size: 13px;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  .about h2 {
+    font-size: 13px;
+    padding-bottom: 2em;
   }
 }
