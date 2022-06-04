@@ -52,16 +52,6 @@ a {
   border-radius: .5em;
 }
 
-.main {
-  /* grid-area: main; */
-  /* width: 100%; */
-  /* display: flex;
-  flex-direction: column; */
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
-  background-color: aqua;
-}
-
 .fotoMain img {
   width: 100%;
   height: 10%;
@@ -84,8 +74,6 @@ a {
 .article p {
   width: 100%;
   font-size: .8em;
-  /* padding-bottom: 2em;
-  padding-top: 0em; */
 }
 
 .article img {
@@ -95,53 +83,55 @@ a {
 
 /* FLORA Y FAUNA SECTION */
 
-/* .florafauna {
-  grid-area: florafauna;
-  background-color: #37201a;
+.florafauna {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30em, auto));
   color: #8e7066;
-  width: 100%;
-display: flex;
-flex-wrap: wrap;
-column-gap: 10em;
-justify-content: center;
+  background-color: #37201a;
+  column-gap: 2em;
+  padding: 2em 2em;
 }
 
-.florafauna p {
+.flora h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.flora p {
   padding-left: 1em;
 }
 
 .flora1 {
   width: 100%;
-  padding-bottom: 3.125em;
-  max-width: 20em;
+  padding-bottom: 2em;
   display: flex;
 }
 
 .flora1 img {
-  width: 12.5rem;
-  height: 6.25rem;
+  width: 100%;
+  height: 100%;
+  max-width: 15%;
 }
 
-.flora h2 {
-  padding-left: 15px;
-  padding-bottom: 1.5em;
+.fauna p {
+  padding-left: 1em;
+}
+
+.fauna h2 {
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .fauna1 {
   width: 100%;
   padding-bottom: 3.125rem;
-  max-width: 27em;
   display: flex;
 }
 
 .fauna1 img {
-  width: 12.5rem;
-  height: 6.25rem;
-}
-
-.fauna h2 {
-  padding-left: 15px;
-  padding-bottom: 0.9375rem;
+  width: 100%;
+  height: 100%;
+  max-width: 15%;
 }
 
 .fotoff {
@@ -153,19 +143,19 @@ justify-content: center;
 
 .fotoff img {
   width: 100%;
-  max-width: 31.25rem;
+  height: 100%;
 }
 
 .fotoff h2 {
-  padding-bottom: 1.5625rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .fotoff p {
-  width: 31.25rem;
-  padding-top: 0.9375rem;
-  padding-bottom: 3.125rem;
-} */
-
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
 /* RESENA AND LINKS SECTION */
 
