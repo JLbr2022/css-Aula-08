@@ -12,7 +12,7 @@ body {
 /* MAIN SECTION */
 
 .header {
-  grid-area: header;
+  /* grid-area: header; */
   height: 130px;
   font-size: 20px;
   background-color: #180E0C;
@@ -31,7 +31,7 @@ a {
   color: #856159;
   text-decoration: none;
   list-style: none;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .navbar a:hover {
@@ -288,11 +288,13 @@ a {
 
   .navbar {
     padding-top: 0.5em;
+
   }
 
   .article {
     transition-duration: 100ms;
     margin: .5em;
+    margin-bottom: 0;
     /* border: #37201a;
     border-style: solid; */
   }
@@ -304,16 +306,21 @@ a {
 
 @media all and (max-width: 380px) {
   .header {
-    height: 110px;
+    height: 130px;
     transition-duration: 100ms;
   }
 
   .header h1 {
-    font-size: 20px;
+    font-size: 21px;
     height: 10px;
     display: flex;
     justify-content: center;
     transition-duration: 100ms;
+  }
+
+  .navbar {
+    padding-top: 0.5em;
+    gap: 0;
   }
 
   .articles {
