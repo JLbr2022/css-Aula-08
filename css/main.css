@@ -12,7 +12,7 @@ body {
 /* MAIN SECTION */
 
 .header {
-  grid-area: header;
+  /* grid-area: header; */
   height: 130px;
   font-size: 20px;
   background-color: #180E0C;
@@ -31,7 +31,7 @@ a {
   color: #856159;
   text-decoration: none;
   list-style: none;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 .navbar a:hover {
@@ -234,7 +234,7 @@ a {
   }
 }
 
-@media all and (max-width: 770px) {
+@media all and (max-width: 850px) {
   .header {
     display: flex;
     height: 130px;
@@ -245,12 +245,39 @@ a {
     transition-duration: 100ms;
   }
 
+  .header h1 {
+    font-size: 30px;
+    height: 10px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    transition-duration: 100ms;
+  }
+
+  .navbar {
+    font-size: 20px;
+    padding-top: 1em;
+    transition-duration: 100ms;
+  }
+
+  .article {
+    transition-duration: 100ms;
+    margin: .5em;
+    /* margin-bottom: 0; */
+    /* border: #37201a;
+      border-style: solid; */
+  }
+
   .article p {
     padding-top: .5em;
   }
 }
 
 @media all and (max-width: 600px) {
+  .header {
+    height: 130px;
+  }
+
   .florafauna {
     width: auto;
     column-gap: 0;
@@ -288,11 +315,13 @@ a {
 
   .navbar {
     padding-top: 0.5em;
+
   }
 
   .article {
     transition-duration: 100ms;
     margin: .5em;
+    margin-bottom: 0;
     /* border: #37201a;
     border-style: solid; */
   }
@@ -304,16 +333,22 @@ a {
 
 @media all and (max-width: 380px) {
   .header {
-    height: 110px;
+    height: 130px;
     transition-duration: 100ms;
   }
 
   .header h1 {
-    font-size: 20px;
+    font-size: 21px;
     height: 10px;
     display: flex;
     justify-content: center;
     transition-duration: 100ms;
+  }
+
+  .navbar {
+    font-size: 16px;
+    padding-top: 1em;
+    /* gap: 0; */
   }
 
   .articles {
